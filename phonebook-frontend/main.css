@@ -1,0 +1,94 @@
+#elements{
+  font-family: "Times New Roman";
+  
+  font-size: 12px;
+}
+
+.female {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+.male {
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+
+th{
+  font-size: 20px;
+}
+td{
+  font-size: 15px;
+}
+
+.background {
+  min-width: 100%;
+  background-image: url("/assets/images/map.jpg"); 
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: center;
+  background-size: cover; 
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+form {
+  max-width: 1000px;
+  text-align: center;
+  margin: 20px auto;
+  padding-bottom: 70px;
+}
+form input, form select, form button {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  resize: none;
+  color: white;
+  cursor: pointer;
+  border: 3px solid #595959;
+  border-radius: 4px;
+  text-align: center;
+  text-align-last: center;
+  font-family: "Times New Roman";
+  font-size: 15px;
+  background-color: rgb(211, 55, 55);
+}
+
+#editlocation {
+  background-color: green;
+}
+
+#cancel {
+  background-color: red;
+ }
+
+
+.valid{
+    color:red;
+}
+h2{
+  color:white;
+}
+
+
+
+#buton{
+  background-color : green;
+}
+
+   
+  
+

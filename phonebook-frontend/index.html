@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+
+    <title>Tabela korisnika</title>
+</head>
+<body>
+    
+    <table id="elements" class="table">
+        <thead class="alert alert-info">
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Broj telefona</th>
+        <th>Pol</th>
+        <th>Email</th>
+        <th>Grad</th>
+        <th>Država</th>
+        <th>Datum rođenja</th>
+        <th>Starost</th>
+        <th><button> <a href="adduser.html">Dodaj</a></button></th>
+        <th></th>
+        </thead>
+
+    </table>
+
+<!-- Modal -->
+<div id="myModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <form>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="fname">Ime</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <input type="text" id="fname" name="firstname" placeholder="Ime" required 
+                        minlength="2" maxlength="50" size="50">
+                    </div>
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="lname">Prezime</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <input type="text" id="lname" name="lastname" placeholder="Prezime" required
+                        minlength="2" maxlength="50" size="50">
+                    </div>
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="phone">Broj telefona</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <input type="tel" id="phone" name="lastname" placeholder="XXX/XXX-XXX" pattern="[0-9]{3}/[0-9]{3}-[0-9]{3}" required>
+                    </div>
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="lname">Pol</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <select id="gender" required>
+                            <option value="Muško">Muško</option>
+                            <option value="Žensko">Žensko</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="lname">Email</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <input type="email" id="email" name="lastname" placeholder="Email" required>
+                    </div>
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="country">Država</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <select id="country" required>
+                        </select>
+                    </div>
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="city">Grad</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <select id="city2" required>
+                        </select>
+                    </div>
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="date">Datum rođenja</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <button id="buton" type="submit" onclick="put()">Sačuvaj</button>
+                    </div>
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <button class="closemodal" type="submit" onclick="clearOpt()" data-dismiss="modal">Odustani</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+    <script>
+
+        /*var txt = "#div-name-1234-characteristic:561613213213";
+        var numb = txt.match(/\d/g);
+        numb = numb.join("");
+        alert (numb);​*/
+
+    </script>
+
+    <script src="js/getData.js"></script>
+    <script src="js/deleteUser.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+</html>
